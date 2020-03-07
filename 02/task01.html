@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register to Instgram!</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="topSide">
+        <img src="logo.png" alt="logo">
+    </div>
+    <div class="bottomSide">
+
+        <br>
+        <div id="error">
+            <h3 id="errorBox"></h3>
+
+        </div>
+        <div class="form">
+            <h1>REGISTER</h1>
+            <form action="https://www.instagram.com/accounts/signup/email" method="POST">
+                <label for="fname">Name:</label><br>
+                <input type="text" name="fname" id="fname" onkeyup="validateFname()"> <br>
+                <label for="uname">Username:</label><br>
+                <input type="text" name="uname" id="uname" onkeyup="validateUname()"><br>
+                <label for="eMail">e-mail:</label><br>
+                <input type="email" name="eMail" id="email" onkeyup="validateEmail()"><br>
+                <label for="adress">Adress:</label><br>
+                <input type="textarea" name="adress" id="adress" onkeyup="validateAdress()"> <br>
+                <label for="pw">Password:</label><br>
+                <input type="password" name="pw" id="pw" onkeyup="validatePassword()"><br>
+                <label for="rpw">Re-write Password:</label><br>
+                <input type="password" name="rpw" id="rpw" onkeyup="revalidatePassword()"><br><br>
+                <input id="sub" type="submit" value="REGISTER">
+            </form>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

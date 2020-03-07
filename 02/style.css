@@ -1,0 +1,60 @@
+html,
+body {
+    height: 100%;
+
+}
+
+.topSide {
+    border: 3px solid rgb(115, 179, 252);
+    height: 35%;
+    background-color: rgb(115, 179, 252);
+    border-width: 3px;
+}
+
+.bottomSide {
+    
+    height: 65%;
+    border: 3px solid rgb(78, 184, 255);
+    background-color: rgb(78, 184, 255);
+    border-width: 3px;
+  text-align:  center;
+  
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    margin-top: auto;
+  
+    
+
+}
+.form{
+    color: rgb(122, 23, 23);
+    font-family: monospace;
+   font-size: 25px;
+    
+    
+ 
+}
+#sub{
+    background-color: rgb(248, 104, 68);
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 16px;
+    color: purple;
+}
+#errorBox{
+  
+    color: red;
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
+
