@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            Ankara Social
+            <img src="logo.png" alt="">
+        </div>
+        <div class="exit">Çıkış</div>
+    </header>
+    <main>
+        <iframe name="stream" id="stream" src="" scrolling="no" frameborder="0"></iframe>
+
+    </main>
+    <aside >
+        <div class="menu">
+            <ul>
+                <li><a href="">Gruplar</a>
+                    <ul>
+                        <li id="menu1" onclick="selected1()"class="submenu" ><a  href="foodandbeverage.html" target="stream">- Yeme içme</a></li>
+                        <li id="menu2" onclick="selected2()"class="submenu"><a  href="travel.html" target="stream">- Gezi</a></li>
+                        <li id="menu3" onclick="selected3()"class="submenu"><a  href="computer.html" target="stream">- Bilişim</a></li>
+                        <li id="menu4" onclick="selected4()"class="submenu"><a  href="international.html" target="stream">- International</a></li>
+                        <li id="menu5" onclick="selected5()"class="submenu"><a  href="market.html" target="stream">- Borsa</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Arkadaş Listesi</a></li>
+                <li><a href="">Favorilerim</a></li>
+            </ul>
+        </div>
+    </aside>
+
+   <script>
+function selected1(){
+    document.getElementById('menu1').style.background="yellow";
+    
+
+}
+function selected2(){
+    document.getElementById('menu2').style.background="yellow";
+    
+
+}
+function selected3(){
+    document.getElementById('menu3').style.background="yellow";
+    
+
+}
+function selected4(){
+    document.getElementById('menu4').style.background="yellow";
+    
+
+}
+function selected5(){
+    document.getElementById('menu5').style.background="yellow";
+    
+
+}
+
+
+
+   </script>
+
+
+</body>
+
+</html>
