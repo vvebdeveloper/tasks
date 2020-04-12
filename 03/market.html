@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        
+            margin: 0;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-content: center;
+            text-align: center;    
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            border-radius: 75%;
+            float: left;
+        }
+        .items{
+        
+            border: 1px solid white;
+            border-radius: 20%;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 4%;
+            margin-bottom: 15px;
+            background-color: white;
+            position: relative;
+            
+
+        }
+        .like {
+            width: 39px;
+            height: 30px;
+            position: absolute;
+            bottom: 0;
+            right: 20%;
+            margin: 0;
+        }
+
+        .counter {
+            font-weight: bold;
+            font-family: cursive;
+            position: absolute;
+            bottom: 0;
+            right: 30%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="items">
+    <img src="thanos.webp" alt="">
+    <p>Sermaye Piyasası Kurulu'nun Seri:II, No 15.1 Sayılı Özel Durumlar Tebliği'nin 12-(4). maddesi gereğince ARTI, AVTUR, MTRYO, SERVE'de ortaklık yapısının değiştiği duyuruldu. </p>
+
+    <p class="counter" id="counter1">11</p>
+    <img class="like" id="like1" onclick="liked1()" src="whiteheart.png" alt="like"></div>
+<div class="items">
+    <img src="thanos.webp" alt="">
+    <p>Sermaye Piyasası Kurulu'nun Seri:II, No 15.1 Sayılı Özel Durumlar Tebliği'nin 12-(4). maddesi gereğince ARTI, AVTUR, MTRYO, SERVE'de ortaklık yapısının değiştiği duyuruldu. </p>
+
+    <p class="counter" id="counter2">60</p>
+    <img class="like" id="like2" onclick="liked2()" src="whiteheart.png" alt="like"></div>
+<div class="items">
+    <img src="thanos.webp" alt="">
+    <p>Sermaye Piyasası Kurulu'nun Seri:II, No 15.1 Sayılı Özel Durumlar Tebliği'nin 12-(4). maddesi gereğince ARTI, AVTUR, MTRYO, SERVE'de ortaklık yapısının değiştiği duyuruldu. </p>
+
+    <p class="counter" id="counter3">34</p>
+    <img class="like" id="like3" onclick="liked3()" src="whiteheart.png" alt="like"></div>
+<div class="items">
+    <img src="thanos.webp" alt="">
+    <p>Sermaye Piyasası Kurulu'nun Seri:II, No 15.1 Sayılı Özel Durumlar Tebliği'nin 12-(4). maddesi gereğince ARTI, AVTUR, MTRYO, SERVE'de ortaklık yapısının değiştiği duyuruldu. </p>
+
+    <p class="counter" id="counter4">12</p>
+    <img class="like" id="like4" onclick="liked4()" src="whiteheart.png" alt="like"></div>
+    
+
+    <script>
+
+        function liked1(){
+            var counter ,newNumber;
+            counter=document.getElementById('counter1').textContent;
+            var newNumber=Number(counter)+1;
+            document.getElementById('counter1').innerHTML=newNumber;
+            document.getElementById('like1').src="redheart.png"; 
+           
+        }
+        function liked2(){
+            var counter ,newNumber;
+            counter=document.getElementById('counter2').textContent;
+            var newNumber=Number(counter)+1;
+            document.getElementById('counter2').innerHTML=newNumber;
+            document.getElementById('like2').src="redheart.png"; 
+           
+        }
+        function liked3(){
+            var counter ,newNumber;
+            counter=document.getElementById('counter3').textContent;
+            var newNumber=Number(counter)+1;
+            document.getElementById('counter3').innerHTML=newNumber;
+            document.getElementById('like3').src="redheart.png"; 
+           
+        }
+        function liked4(){
+            var counter ,newNumber;
+            counter=document.getElementById('counter4').textContent;
+            var newNumber=Number(counter)+1;
+            document.getElementById('counter4').innerHTML=newNumber;
+            document.getElementById('like4').src="redheart.png"; 
+           
+        }
+
+        
+
+
+    </script>
+</body>
+</html>
